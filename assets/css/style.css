@@ -1,9 +1,7 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* General */
 :root {
   --primary-light: #8bb9ff;
-  --primary-medium: #458fff;
+  --primary-medium: #3175dc;
   --primary-dark: #234c8b;
   --secondary-light: #baebba;
   --secondary-medium: #8ddd8d;
@@ -52,7 +50,7 @@ h4 {
   padding: 0;
 }
 
-/* Back to top button */
+/* Back to Top Button */
 .back-to-top {
   position: fixed;
   display: none;
@@ -81,7 +79,7 @@ h4 {
   }
 }
 
-/* Prelaoder */
+/* Preloader */
 #preloader {
   position: fixed;
   top: 0;
@@ -125,9 +123,7 @@ h4 {
   }
 }
 
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
+/* Top Bar */
 #topbar {
   padding: 0 0 10px 0;
   font-size: 14px;
@@ -159,9 +155,7 @@ h4 {
   border-left: 0;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Header */
 #header {
   height: 110px;
   transition: all 0.5s;
@@ -229,15 +223,7 @@ h4 {
   margin-top: 60px;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
-
+/* Desktop Navbar */
 .main-nav,
 .main-nav * {
   margin: 0;
@@ -272,9 +258,9 @@ h4 {
 
 .main-nav .drop-down ul {
   display: block;
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: calc(100% - 30px);
+  top: calc(100% - 30px); */
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -291,7 +277,7 @@ h4 {
 }
 
 .main-nav .drop-down li {
-  min-width: 180px;
+  /* min-width: 150px; */
   position: relative;
 }
 
@@ -336,7 +322,7 @@ h4 {
   right: 15px;
 }
 
-/* Mobile Navigation */
+/* Mobile Navbar */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -439,9 +425,7 @@ h4 {
   color: var(--black);
 }
 
-/*--------------------------------------------------------------
-# Landing Section
---------------------------------------------------------------*/
+/* Landing */
 #hero {
   width: 100%;
   height: 100vh;
@@ -497,7 +481,7 @@ h4 {
 }
 
 .intro-info h3 {
-  color: var(--primary-medium);
+  color: var(--black);
 }
 
 @media (max-width: 1065px) {
@@ -529,11 +513,7 @@ h4 {
   background: var(--secondary-dark);
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-/* Sections Header
---------------------------------*/
+/* Section Headers */
 .section-header h3 {
   font-size: 32px;
   color: var(--primary-dark);
@@ -565,18 +545,13 @@ h4 {
   }
 }
 
-/* Section with background
---------------------------------*/
 .section-bg {
   background: #f5f8fd;
 }
 
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
+/* About Us */
 
-/* Presidents Welcome Section
---------------------------------*/
+/* President's Welcome */
 #presidents-welcome {
   padding: 80px 0;
 }
@@ -628,13 +603,14 @@ h4 {
   transition: 0.5s;
 }
 
-/* Blurb/History Section
---------------------------------*/
+/* History */
 #history {
-  padding: 40px 0;
+  /* padding: 40px 0; */
+  padding: 80px 0;
 }
 
-#history .history-content h2 {
+#history .history-content h3 {
+  padding-top: 30px;
   color: var(--primary-dark);
   font-family: var(--font-title);
   font-weight: 700;
@@ -643,9 +619,9 @@ h4 {
 
 #history .history-img img {
   width: 100%;
-  border: 8px solid var(--white);
+  border: 8px solid #edf0f4;
   transition: 0.5s;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 #history .history-img img:hover {
@@ -653,8 +629,7 @@ h4 {
   transform: scale(1.03);
 }
 
-/* Members Testimonials Section
---------------------------------*/
+/* Testimonials */
 #testimonials {
   padding: 60px 0;
   background-color: var(--white);
@@ -732,8 +707,7 @@ h4 {
   background-color: var(--primary-medium);
 }
 
-/* PASTA Values Section
---------------------------------*/
+/* Values */
 #values {
   padding: 60px 0 40px 0;
 }
@@ -786,11 +760,9 @@ h4 {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-# Rush
---------------------------------------------------------------*/
-/* Apply Section
---------------------------------*/
+/* Rush */
+
+/* Apply */
 #apply {
   padding: 120px 0;
 }
@@ -837,8 +809,7 @@ h4 {
   height: 100%;
 }
 
-/* Frequently Asked Questions Section
---------------------------------*/
+/* FAQs */
 #faq {
   padding: 60px 0;
   overflow: hidden;
@@ -891,12 +862,9 @@ a:focus {
   content: "\f2c7" !important;
 }
 
-/*--------------------------------------------------------------
-# Members
---------------------------------------------------------------*/
+/* Members */
 
-/* EBoard Section
---------------------------------*/
+/* EBoard */
 #eboard {
   padding-top: 80px;
 }
@@ -950,7 +918,7 @@ a:focus {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
-  /*  padding-bottom: 0.5rem;*/
+  /* padding-bottom: 0.5rem; */
 }
 
 #eboard .eboard-img figure img {
@@ -1096,8 +1064,7 @@ a:focus {
   }
 }
 
-/* Actives Section
---------------------------------*/
+/* Actives */
 #actives {
   padding: 40px 0;
 }
@@ -1181,8 +1148,7 @@ a:focus {
     font-size: 24px;
   }
 }
-/* Alumni Section
---------------------------------*/
+/* Alumni */
 #alumni {
   padding: 0px 0;
 }
@@ -1229,8 +1195,7 @@ a:focus {
   list-style-type: none;
 }
 
-/* Where We Are Section
---------------------------------*/
+/* Where We Are */
 #clients {
   padding: 40px 0;
 }
@@ -1272,9 +1237,7 @@ a:focus {
   background-color: var(--primary-medium);
 }
 
-/*--------------------------------------------------------------
-# Contact Us
---------------------------------------------------------------*/
+/* Contact Us */
 #contact-us {
   padding: 100px 0;
 }
@@ -1334,15 +1297,7 @@ a:focus {
   border: 3px solid var(--primary-medium);
 }
 
-/*--------------------------------------------------------------
-# Random Sections on Home Page
---------------------------------------------------------------*/
-
-/* Call To Action Section
---------------------------------*/
-
-/* Team Section
---------------------------------*/
+/* Team */
 #team {
   padding: 60px 0;
 }
@@ -1413,9 +1368,7 @@ a:focus {
   margin: 0 2px;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/* Breadcrumbs */
 .breadcrumbs {
   padding: 15px 0;
   background: #f9f9fb;
@@ -1455,9 +1408,7 @@ a:focus {
   content: "/";
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 #footer {
   background: var(--white);
   padding: 0 0 30px 0;
@@ -1703,6 +1654,7 @@ a:focus {
 
 #footer .social-media a {
   padding-right: 10px;
+  color: var(--primary-dark);
 }
 
 #footer.social-media.fa {
