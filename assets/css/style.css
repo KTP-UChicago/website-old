@@ -710,6 +710,8 @@ h4 {
 /* Values */
 #values {
   padding: 60px 0 40px 0;
+  text-align: center;
+  font-family: var(--font-body);
 }
 
 #values .box {
@@ -786,6 +788,7 @@ h4 {
 
 #apply p {
   text-align: center;
+  font-family: var(--font-body);
 }
 
 #apply h4 {
