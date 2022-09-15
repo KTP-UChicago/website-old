@@ -13,8 +13,6 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
@@ -40,19 +38,8 @@
     <!-- CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-    <!-- ======= Header ======= -->
+    <!-- Header -->
     <header id="header" class="header-inner-pages">
-      <div id="topbar">
-        <div class="container">
-          <div class="social-links">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
       <div class="container">
         <nav class="main-nav float-right d-none d-lg-block">
           <ul>
@@ -79,14 +66,12 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
-        <!-- .main-nav -->
       </div>
     </header>
-    <!-- #header -->
   </head>
 
   <body>
-    <!-- =======  EBoard Section ======= -->
+    <!-- EBoard -->
     <section id="eboard" class="eboard">
       <header class="section-header">
         <h3>Executive Board</h3>
@@ -248,6 +233,7 @@
             </div>
           </div>
         </div>
+
         <div id="popup1" class="overlay">
           <div class="popup">
             <h1>Emma Rosenthal</h1>
@@ -389,7 +375,7 @@
       </div>
     </section>
 
-    <!-- =======  Actives Section ======= -->
+    <!-- Actives -->
     <section id="actives" class="actives section-bg">
       <header class="section-header">
         <h3>Active Members</h3>
@@ -407,24 +393,21 @@
             }
             return result;
           }
-          //get the file.
+          // get the file.
           var csv = loadFile("assets/memberList.csv");
-          //split and get the rows in an array
+          // split and get the rows in an array
           var rows = csv.split("\n");
-          //move line by line
+          // move line by line
           for (var i = 1; i < rows.length - 1; i++) {
-            //split by separator (,) and get the columns
+            // split by separator (,) and get the columns
             cols = rows[i].split(",");
 
-            //start of row
-            if (i % 5 == 1) {
+            // start of row
+            if (i % 5 == 1)
               document.getElementById("memberContainer").innerHTML +=
                 '<div class="row" id="memberRow">';
-            }
-
-            if (i % 5 == 0) {
+            if (i % 5 == 0)
               document.getElementById("memberContainer").innerHTML += "</div>";
-            }
 
             var memberName = cols[0] + " " + cols[1];
             console.log(memberName);
@@ -452,7 +435,7 @@
       </div>
     </section>
 
-    <!-- =======  Alumni Section ======= -->
+    <!-- Alumni -->
     <section id="intro-alumni" class="alumni">
       <div class="container">
         <section id="alumni" class="alumni">
@@ -471,7 +454,7 @@
       </div>
     </section>
 
-    <!-- ======= Clients Section ======= -->
+    <!-- Clients -->
     <section id="clients" class="clients wow fadeInUp">
       <div class="container">
         <div class="owl-carousel clients-carousel">
