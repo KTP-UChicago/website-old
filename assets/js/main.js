@@ -161,17 +161,22 @@
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 3000,
+    dots: false,
     loop: true,
     responsive: {
       0: {
-        items: 2,
+        items: 4,
+        slideBy: 2,
       },
       768: {
-        items: 4,
+        items: 6,
+        slideBy: 3,
       },
       900: {
-        items: 6,
+        items: 8,
+        slideBy: 4,
       },
     },
   });
