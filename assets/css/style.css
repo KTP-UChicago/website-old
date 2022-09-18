@@ -449,22 +449,14 @@ h4 {
 
 @media (min-width: 1065px) {
   #hero {
-    background: #f5f8fd url("../img/home/landing.png") center top no-repeat;
+    background: #f5f8fd url("../img/index/landing.png") center top no-repeat;
     background-size: cover;
   }
 }
 
 @media (min-width: 1065px) {
   #hero .intro-info {
-    padding-top: 80px;
-  }
-}
-
-@media (max-width: 1065px) {
-  #hero .intro-info {
-    /* text-align: center; */
-    padding-top: 50%;
-    /* margin-left: 50%; */
+    padding-top: 30px;
   }
 }
 
