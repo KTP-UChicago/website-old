@@ -454,9 +454,13 @@ h4 {
   }
 }
 
+#hero .intro-info {
+  padding-top: 100px;
+}
+
 @media (min-width: 1065px) {
   #hero .intro-info {
-    padding-top: 30px;
+    padding-top: 25px;
   }
 }
 
