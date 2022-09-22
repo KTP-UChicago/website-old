@@ -162,7 +162,7 @@
   $(".clients-carousel").owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 3500,
     dots: false,
     loop: true,
     responsive: {
